@@ -89,6 +89,10 @@ public class Kazuate {
             {
                 System.exit( 1 );
             }
+            if( input_chance - i - 1 > 0 )
+            {
+                System.out.println("あと" + ( input_chance - i - 1 ) + "回入力できます。" );
+            }
         }
         System.out.println("残念！答えは、" + random_number );
     }
