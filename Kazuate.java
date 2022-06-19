@@ -41,9 +41,7 @@ public class Kazuate {
             input_number = Integer.parseInt( input );
         }
 
-        int return_number = input_number;
-
-        return return_number;
+        return input_number;
     }
 
     public static boolean Judge ( int input_number, int random_number, int gap )
