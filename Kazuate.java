@@ -76,7 +76,7 @@ public class Kazuate {
         int random_min = 10;
         int random_max = 99;
         int random_number = RandomNumber( random_max, random_min );
-        System.out.println( random_number );
+        // System.out.println( random_number );
 
         boolean flag = false;
         int input_chance = 5;
