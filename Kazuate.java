@@ -26,16 +26,24 @@ public class Kazuate {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        
         int input_number = Integer.parseInt( input );
 
-        if( input_number < random_min || input_number > random_max )
+        while( input_number < random_min || input_number > random_max )
         {
             System.out.println("もう一度");
-            InputNumber(random_max, random_min);
+            System.out.println("二桁の数字をキーボードから入力してください");
+            try {
+                input = br.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            input_number = Integer.parseInt( input );
         }
 
-        return input_number;
+        int return_number = input_number;
+
+        return return_number;
     }
 
     public static boolean Judge ( int input_number, int random_number, int gap )
@@ -70,7 +78,7 @@ public class Kazuate {
         int random_min = 10;
         int random_max = 99;
         int random_number = RandomNumber( random_max, random_min );
-        //System.out.println( random_number );
+        System.out.println( random_number );
 
         boolean flag = false;
         int input_chance = 5;
